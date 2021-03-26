@@ -1,62 +1,62 @@
 [
-		{
-		"artist": "Marc E. Bassy",
-		"title": "Morning",
-		"genre": "Pop",
-		"year": 2016,
-		},
-		{
-		"artist": "Joji",
-		"title": "777",
-		"genre": "Alternative",
-		"year": 2020,
-		},
-		{
-		"artist": "Matt Maeson ",
-		"title": "Hallucinogenics",
-		"genre": "Alternative",
-		"year": 2016,
-		},
-		{
-		"artist": "Taylor Swift",
-		"title": "The Way I Loved You",
-		"genre": "Country",
-		"year": 2008,
-		},
-		{
-		"artist": "Dan + Shey",
-		"title": "Tequila",
-		"genre": "Country",
-		"year": 2018,
-		},
-		{
-		"artist": "Shag Rock",
-		"title": "Sunbleached Girl",
-		"genre": "Alternative",
-		"year": 2017,
-		},
-		{
-		"artist": "Russ",
-		"title": "Losin Control",
-		"genre": "Rap",
-		"year": 2015,
-		},
-		{
-		"artist": "Jay-Z",
-		"title": "Empire State of Mind",
-		"genre": "Rap",
-		"year": 2009,
-		},
-		{
-		"artist": "Frank Ocean",
-		"title": "Moon River",
-		"genre": "Pop",
-		"year": 2018,
-		},
-		{
-		"artist": "fun.",
-		"title": "We Are Young",
-		"genre": "Pop",
-		"year": 2012,
-		}
-	]
+	{
+	"artist": "Marc E. Bassy",
+	"title": "Morning",
+	"genre": "Pop",
+	"year": 2016,
+	},
+	{
+	"artist": "Joji",
+	"title": "777",
+	"genre": "Alternative",
+	"year": 2020,
+	},
+	{
+	"artist": "Matt Maeson ",
+	"title": "Hallucinogenics",
+	"genre": "Alternative",
+	"year": 2016,
+	},
+	{
+	"artist": "Taylor Swift",
+	"title": "The Way I Loved You",
+	"genre": "Country",
+	"year": 2008,
+	},
+	{
+	"artist": "Dan + Shey",
+	"title": "Tequila",
+	"genre": "Country",
+	"year": 2018,
+	},
+	{
+	"artist": "Shag Rock",
+	"title": "Sunbleached Girl",
+	"genre": "Alternative",
+	"year": 2017,
+	},
+	{
+	"artist": "Russ",
+	"title": "Losin Control",
+	"genre": "Rap",
+	"year": 2015,
+	},
+	{
+	"artist": "Jay-Z",
+	"title": "Empire State of Mind",
+	"genre": "Rap",
+	"year": 2009,
+	},
+	{
+	"artist": "Frank Ocean",
+	"title": "Moon River",
+	"genre": "Pop",
+	"year": 2018,
+	},
+	{
+	"artist": "fun.",
+	"title": "We Are Young",
+	"genre": "Pop",
+	"year": 2012,
+	}
+]
