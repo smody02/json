@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Song List</title>
+	<title>Messages</title>
 	<meta charset="utf-8"/>
 	<script>
 		function loadFile() {
@@ -30,7 +30,7 @@
 
 					strHTML = "<ul>";
 					animals.forEach(function(song) {
-					  strHTML += "<li>" + song.title + " : " + song.year + "</li>";
+					  strHTML += "<li>" + song.name + " : " + song.type + "</li>";
 					})
 					strHTML += "</ul>";
 					document.getElementById("data").innerHTML =strHTML;
