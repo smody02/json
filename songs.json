@@ -1,63 +1,63 @@
 {"songs":
    [
       {
-         "artist":"Marc E. Bassy",
+         "artist":[]"Marc E. Bassy"],
          "title":"Morning",
-         "genre":"Pop",
+         "genre":["Pop"],
          "year":2016
       },
       {
-         "artist":"Joji",
+         "artist":["Joji"],
          "title":"777",
-         "genre":"Alternative",
+         "genre":["Alternative"],
          "year":2020
       },
       {
-         "artist":"Matt Maeson ",
+         "artist":["Matt Maeson"],
          "title":"Hallucinogenics",
-         "genre":"Alternative",
+	       "genre":["Alternative"],
          "year":2016
       },
       {
-         "artist":"Taylor Swift",
+         "artist":["Taylor Swift"],
          "title":"The Way I Loved You",
-         "genre":"Country",
+         "genre":["Country"],
          "year":2008
       },
       {
-         "artist":"Dan + Shey",
+         "artist":["Dan + Shey"],
          "title":"Tequila",
-         "genre":"Country",
+         "genre":["Country"],
          "year":2018
       },
       {
-         "artist":"Shag Rock",
+         "artist":["Shag Rock"],
          "title":"Sunbleached Girl",
-         "genre":"Alternative",
+         "genre":["Alternative"],
          "year":2017
       },
       {
-         "artist":"Russ",
+         "artist":["Russ"],
          "title":"Losin Control",
-         "genre":"Rap",
+         "genre":["Rap"],
          "year":2015
       },
       {
-         "artist":"Jay-Z",
+         "artist":["Jay-Z"],
          "title":"Empire State of Mind",
-         "genre":"Rap",
+         "genre":["Rap"],
          "year":2009
       },
       {
-         "artist":"Frank Ocean",
+         "artist":["Frank Ocean"],
          "title":"Moon River",
-         "genre":"Pop",
+         "genre":["Pop"],
          "year":2018
       },
       {
-         "artist":"fun.",
+         "artist":["fun."],
          "title":"We Are Young",
-         "genre":"Pop",
+         "genre":["Pop"],
          "year":2012
       }
    ]

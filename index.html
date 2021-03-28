@@ -6,8 +6,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<style type="text/css">
 
-		#body{
-			font-family: "Helvetica";
+		body{
 			background-color: #ebedf0;
 		}
 
@@ -28,7 +27,7 @@ $(document).ready(function(){
 	var request = new  XMLHttpRequest();
 
 	//open json
-	request.open("GET", "https://smody02.github.io/json/JSON_Songs.json", true);
+	request.open("GET", "https://smody02.github.io/json/songs.json", true);
 
 	request.onreadystatechange = function(){
 		if(request.readyState==4 && request.status==200){
@@ -66,7 +65,7 @@ $(document).ready(function(){
 });
 
 	//make the table
-	$.get("https://bgattinoni.github.io/comp20/songs.json",
+	$.get("https://smody02.github.io/json/songs.json",
 
 	function(data){
 		//var info=JSON.parse(data);
@@ -87,20 +86,17 @@ $(document).ready(function(){
 
 </script>
 
-<body id="body">
-	<h1 class="id">Songlist</h1>
+<body>
 
-	<h2 class="id">Part 2: Serialize and Display</h2>
 	<div id="str">
-		String Here.
+		loading...
 	</div>
 
-	<h2 class="id">Part 3: User Friendly Display</h2>
 	<div id = "table">
-		Table Here.
+		loading...
 	</div>
 
-	<h2 class="id">Part 4: Filter the Data</h2>
+
 	<div id = "form">
 	</div>
 
@@ -108,18 +104,14 @@ $(document).ready(function(){
 	<form class="id">
 		<select name="genres">
 			<option value="Alternative">Alternative</option>
-			<option value="Folk">Folk</option>
 			<option value="Pop">Pop</option>
-			<option value="Hip Hop">Hip Hop</option>
-			<option value="Rock">Rock</option>
-			<option value="Blue-eyed Soul">Blue-eyed Soul</option>
-			<option value="Neo Soul">Neo Soul</option>
-			<option value="Folk">Folk</option>
+			<option value="Rap">Rap</option>
+			<option value="Country">Country</option>
 		</select>
 		<input type="button" name="button" value="Filter">
 	</form>
 
-	<p id="s0"></p>
+		<p id="s0"></p>
     <p id="s1"></p>
     <p id="s2"></p>
     <p id="s3"></p>
@@ -129,6 +121,7 @@ $(document).ready(function(){
     <p id="s7"></p>
     <p id="s8"></p>
     <p id="s9"></p>
+
 	<br><br><br><br>
 
 </body>
