@@ -1,9 +1,16 @@
 [
 	{
-	"artist": "Marc E. Bassy",
-	"title": "Morning",
-	"genre": "Pop",
-	"year": 2016,
+	"name": "Fido1",
+	"type": "cat",
+	"breed": "Maine Coon",
+	"age": 4,
+	"gender": "female",
+	"procedures": ["checkup","rabies","spayed"],
+	"adopting_family": {
+		"name": "smith",
+		"town": "Cambridge",
+		"children" : 1,
+		"other_pets": false
 	}
 },
 {
