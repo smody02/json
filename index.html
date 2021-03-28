@@ -4,16 +4,70 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Songlist</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<style type="text/css">
-
-		body{
-			background-color: #ebedf0;
-		}
-
-	</style>
-
+<link rel='stylesheet' type="text/css" href="style.css" />
 
 </head>
+
+<body>
+
+<div id=bar >
+	Song List
+</div>
+
+<br><br><br>
+	<div id="str">
+		loading...
+	</div>
+
+<div class="column">
+	<div id = "organized">
+		loading...
+	</div>
+</div>
+
+
+<div class="column">
+	<br><br>
+</div>
+	<!-- Form for Filterings -->
+	<form class="id">
+		<select name="genre">
+			<option value="Alternative">Alternative</option>
+			<option value="Pop">Pop</option>
+			<option value="Rap">Rap</option>
+			<option value="Country">Country</option>
+		</select>
+		<input type="button" name="button" value="FILTER">
+	</form>
+
+<div id = "organized">
+		<div id="song0"></div>
+		<br>
+    <div id="song1"></div>
+		<br>
+    <div id="song2"></div>
+		<br>
+    <div id="song3"></div>
+		<br>
+    <div id="song4"></div>
+		<br>
+    <div id="song5"></div>
+		<br>
+    <div id="song6"></div>
+		<br>
+    <div id="song7"></div>
+		<br>
+    <div id="song8"></div>
+		<br>
+    <div id="song9"></div>
+		<br>
+</div>
+
+
+
+	<br><br><br><br>
+
+</body>
 
 <script language="javascript">
 
@@ -21,7 +75,7 @@
 $(document).ready(function(){
 
 	for(i = 0; i < 10; i++) {
-		$("#s"+i).hide();
+		$("#song"+i).hide();
 	}
 	//request
 	var request = new  XMLHttpRequest();
@@ -40,24 +94,22 @@ $(document).ready(function(){
 
 
 		for(i = 0; i < 10; i++) {
-			$("#s" + i).text(info["songs"][i]["title"]);
+			$("#song" + i).text(info["songs"][i]["title"]);
 		}
 
 		//form
 		$("[name='button']").click(function(){
-			//all songs are currently showing, so hide songs that
-			//don't have genre
-			//assign values to Songs
+
 			for(i = 0; i < 10; i++) {
-				$("#s"+i).hide();
-	        }
-			//loop through  all 10 songs
+				$("#song"+i).hide();
+			}
+
 			for(i = 0; i < 10; i++){
-				//loop through every genre of each song
-				for(j = 0; j < info["songs"][i]["genre"].length; j++){
-					//hide song if it doesnt match genre
+
+				for(j = 0; j < 10; j++){
+
 					if(info["songs"][i]["genre"][j] == document.forms[0].genre.value){
-						$("#s"+i).show();
+						$("#song"+i).show();
 					}
 				}
 			}
@@ -67,67 +119,22 @@ $(document).ready(function(){
 	request.send();
 });
 
-	//make the table
+//tableee
 	$.get("https://smody02.github.io/json/songs.json",
 
 	function(data){
-		//var info=JSON.parse(data);
 		str = JSON.stringify(data);
-		strHTML="<table>";
+		tab="<table>";
 		data["songs"].forEach(function(song){
-			strHTML += "<tr><td>"
+			tab += "<tr><td>"
 					+ song.title + " by "
 					+ song.artist + "<br>"
 					+ "Released in " + song.year + "<br>"
 					+ "Genre: " + song.genre + "<br>" + "<br>" + "</td></tr>";
 		})
-		strHTML += "</table>";
-		document.getElementById("organized").innerHTML = strHTML;
+		tab += "</table>";
+		document.getElementById("organized").innerHTML = tab;
 	});
 
-
-
 </script>
-
-<body>
-
-	<div id="str">
-		loading...
-	</div>
-
-
-	<br><br>
-	<div id = "organized">
-		loading...
-	</div>
-
-
-	<div id = "form">
-	</div>
-
-	<!-- Form for Filterings -->
-	<form class="id">
-		<select name="genre">
-			<option value="Alternative">Alternative</option>
-			<option value="Pop">Pop</option>
-			<option value="Rap">Rap</option>
-			<option value="Country">Country</option>
-		</select>
-		<input type="button" name="button" value="Filter">
-	</form>
-
-		<p id="s0"></p>
-    <p id="s1"></p>
-    <p id="s2"></p>
-    <p id="s3"></p>
-    <p id="s4"></p>
-    <p id="s5"></p>
-    <p id="s6"></p>
-    <p id="s7"></p>
-    <p id="s8"></p>
-    <p id="s9"></p>
-
-	<br><br><br><br>
-
-</body>
 </html>
