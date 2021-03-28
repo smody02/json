@@ -14,10 +14,10 @@
 
 
 </head>
-<!-- SCRIPT BEGINS HERE -->
+
 <script language="javascript">
 
-//getting the raw string
+
 $(document).ready(function(){
 
 	for(i = 0; i < 10; i++) {
@@ -26,14 +26,17 @@ $(document).ready(function(){
 	//request
 	var request = new  XMLHttpRequest();
 
-	//open json
+	//get json
 	request.open("GET", "https://smody02.github.io/json/songs.json", true);
 
 	request.onreadystatechange = function(){
+
 		if(request.readyState==4 && request.status==200){
 			data = request.responseText;
 			info = JSON.parse(data);
+
 			document.getElementById("str").innerHTML = data;
+
 
 
 		for(i = 0; i < 10; i++) {
@@ -53,7 +56,7 @@ $(document).ready(function(){
 				//loop through every genre of each song
 				for(j = 0; j < info["songs"][i]["genre"].length; j++){
 					//hide song if it doesnt match genre
-					if(info["songs"][i]["genre"][j] == document.forms[0].genres.value){
+					if(info["songs"][i]["genre"][j] == document.forms[0].genre.value){
 						$("#s"+i).show();
 					}
 				}
@@ -73,13 +76,13 @@ $(document).ready(function(){
 		strHTML="<table>";
 		data["songs"].forEach(function(song){
 			strHTML += "<tr><td>"
-					+ song.title + "<br>"
-					+ "Artist: " + song.artist + "<br>"
-					+ "Genre: " + song.genre + "<br>"
-					+ "Released " + song.year + "<br>" + "<br>" + "</td></tr>";
+					+ song.title + " by "
+					+ song.artist + "<br>"
+					+ "Released in " + song.relYear + "<br>"
+					+ "Genre: " + song.genre + "<br>" + "<br>" + "</td></tr>";
 		})
 		strHTML += "</table>";
-		document.getElementById("table").innerHTML = strHTML;
+		document.getElementById("organized").innerHTML = strHTML;
 	});
 
 
@@ -92,7 +95,9 @@ $(document).ready(function(){
 		loading...
 	</div>
 
-	<div id = "table">
+
+	<br><br>
+	<div id = "organized">
 		loading...
 	</div>
 
@@ -102,7 +107,7 @@ $(document).ready(function(){
 
 	<!-- Form for Filterings -->
 	<form class="id">
-		<select name="genres">
+		<select name="genre">
 			<option value="Alternative">Alternative</option>
 			<option value="Pop">Pop</option>
 			<option value="Rap">Rap</option>
