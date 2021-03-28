@@ -4,61 +4,61 @@
          "artist":["Marc E. Bassy"],
          "title":"Morning",
          "genre":["Pop"],
-         "relYear":2016
+         "year":2016
       },
       {
          "artist":["Joji"],
          "title":"777",
          "genre":["Alternative"],
-         "relYear":2020
+         "year":2020
       },
       {
          "artist":["Matt Maeson"],
          "title":"Hallucinogenics",
 	       "genre":["Alternative"],
-         "relYear":2016
+         "year":2016
       },
       {
          "artist":["Taylor Swift"],
          "title":"The Way I Loved You",
          "genre":["Country"],
-         "relYear":2008
+         "year":2008
       },
       {
          "artist":["Dan + Shey"],
          "title":"Tequila",
          "genre":["Country"],
-         "relYear":2018
+         "year":2018
       },
       {
          "artist":["Shag Rock"],
          "title":"Sunbleached Girl",
          "genre":["Alternative"],
-         "relYear":2017
+         "year":2017
       },
       {
          "artist":["Russ"],
          "title":"Losin Control",
          "genre":["Rap"],
-         "relYear":2015
+         "year":2015
       },
       {
          "artist":["Jay-Z"],
          "title":"Empire State of Mind",
          "genre":["Rap"],
-         "relYear":2009
+         "year":2009
       },
       {
          "artist":["Frank Ocean"],
          "title":"Moon River",
          "genre":["Pop"],
-         "relYear":2018
+         "year":2018
       },
       {
          "artist":["fun."],
          "title":"We Are Young",
          "genre":["Pop"],
-         "relYear":2012
+         "year":2012
       }
    ]
 }
